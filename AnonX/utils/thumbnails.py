@@ -125,10 +125,10 @@ async def gen_thumb(videoid, user_id):
         try:
             draw.text(
                 (450, 25),
-                f"BELLY VC PLAYING",
+                f"ʙᴇʟʟʏ ᴠᴄ ᴘʟᴀʏɪɴɢ",
                 fill="white",
                 stroke_width=3,
-                stroke_fill="grey",
+                stroke_fill="red",
                 font=font,
             )
             if para[0]:
@@ -265,10 +265,10 @@ async def gen_qthumb(videoid, user_id):
         try:
             draw.text(
                 (455, 25),
-                "BELLY ADDED SONG",
+                "ʙᴇʟʟʏ ᴀᴅᴅᴇᴅ ꜱᴏɴɢ",
                 fill="white",
                 stroke_width=5,
-                stroke_fill="black",
+                stroke_fill="yellow",
                 font=font,
             )
             if para[0]:
