@@ -37,7 +37,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
         [
             InlineKeyboardButton(
                 text="● ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅꜱ ●", callback_data="settings_back_helper"
-            )
+            ),
         ],
         [
             InlineKeyboardButton(
@@ -50,7 +50,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
         [
             InlineKeyboardButton(
                 text="● ᴜᴘᴅᴀᴛᴇꜱ ●", url=f"https://t.me/ab_sumit",
-            )
+            ),
         ],
           [
             InlineKeyboardButton(
@@ -59,7 +59,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
         
             InlineKeyboardButton(
                 text="● ʀᴇᴘᴏ ●", url=f"https://t.me/ab_sumit",
-            )
+            ),
         ],
      ]
     return buttons
