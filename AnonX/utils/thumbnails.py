@@ -129,7 +129,7 @@ async def gen_thumb(videoid, user_id):
                 f"BELLY VC PLAYING",
                 fill="black",
                 stroke_width=3,
-                stroke_fill="sky",
+                stroke_fill="cyan",
                 font=font,
             )
             if para[0]:
