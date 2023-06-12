@@ -11,7 +11,7 @@ from youtubesearchpython.__future__ import VideosSearch
 
 from config import YOUTUBE_IMG_URL
 from AnonX import app
-from AnonX.resource import colors
+
 
 def changeImageSize(maxWidth, maxHeight, image):
     widthRatio = maxWidth / image.size[0]
@@ -80,8 +80,7 @@ async def gen_thumb(videoid, user_id):
         e = np.dstack((c, d))
         f = Image.fromarray(e)
         x = f.resize((107, 107))
-        
-        border = random.choice(colors)
+
         youtube = Image.open(f"cache/thumb{videoid}.png")
         bg = Image.open(f"AnonX/assets/anonx.png")
         image1 = changeImageSize(1280, 720, youtube)
@@ -127,9 +126,9 @@ async def gen_thumb(videoid, user_id):
             draw.text(
                 (450, 25),
                 f"BELLY VC PLAYING",
-                fill="black",
+                fill="white",
                 stroke_width=3,
-                stroke_fill="cyan",
+                stroke_fill="magenta",
                 font=font,
             )
             if para[0]:
@@ -221,8 +220,7 @@ async def gen_qthumb(videoid, user_id):
         e = np.dstack((c, d))
         f = Image.fromarray(e)
         x = f.resize((107, 107))
-         
-        border = random.choice(colors)
+
         youtube = Image.open(f"cache/thumb{videoid}.png")
         bg = Image.open(f"AnonX/assets/anonx.png")
         image1 = changeImageSize(1280, 720, youtube)
@@ -268,9 +266,9 @@ async def gen_qthumb(videoid, user_id):
             draw.text(
                 (455, 25),
                 "BELLY ADDED SONG",
-                fill="black",
+                fill="white",
                 stroke_width=5,
-                stroke_fill="red",
+                stroke_fill="green",
                 font=font,
             )
             if para[0]:
