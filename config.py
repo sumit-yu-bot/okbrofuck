@@ -120,7 +120,7 @@ SOUNCLOUD_IMG_URL = getenv(
 
 YOUTUBE_IMG_URL = getenv(
     "YOUTUBE_IMG_URL",
-    "https://graph.org/file/cfcd3011c0b3216383f8c.jpg",
+    "https://graph.org/file/32e115f0d3a2afb937951.jpg",
 )
 
 SPOTIFY_ARTIST_IMG_URL = getenv(
